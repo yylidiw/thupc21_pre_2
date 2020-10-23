@@ -6,16 +6,22 @@ compile:
   java: ''
   pas: -O2
   py: ''
-data: []
+data: 
+ - cases: [1]
+ - cases: [2]
+ - cases: [3]
 folder: problem
 memory limit: 1024 MiB
 name: I
 partial score: false
 pre: []
-samples: []
+samples: 
+ - cases: [1]
 time limit: 7.0
 title:
   zh-cn: I. 狗蛋和二五仔
 type: program
-users: {}
+users: 
+  esc:
+    std: {expected: == 100, path: std/guldan.cpp}
 version: 2
