@@ -42,7 +42,7 @@
 
 第二行一个非负整数 $c$，然后跟着 $c$ 个正整数 $a_1,\cdots,a_c$，表示老师面前有 $c$ 张牌，它们的体力值分别为 $a_1,\cdots,a_c$。保证 $0\le c \le 4$，$\forall~1\le i \le c,1\le a_i \le 2$。
 
-第三行一个非负整数 $p$，然后跟着 $p$ 个正整数 $e_1,\cdots,e_p$，表示小E面前有 $p$ 张牌，它们的体力值分别为 $e_1,\cdots,e_p$。保证 $0\le e\le 4$，$\forall~1\le i\le c,1\le e_i\le 2$。
+第三行一个非负整数 $p$，然后跟着 $p$ 个正整数 $e_1,\cdots,e_p$，表示小E面前有 $p$ 张牌，它们的体力值分别为 $e_1,\cdots,e_p$。保证 $0\le p\le 4$，$\forall~1\le i\le p,1\le e_i\le 2$。
 
 第四行两个 $[0,3]$ 之间的非负整数，分别表示老师和小E的手牌数。
 
