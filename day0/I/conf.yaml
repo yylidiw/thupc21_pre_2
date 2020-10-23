@@ -8,14 +8,14 @@ compile:
   py: ''
 data: []
 folder: problem
-memory limit: 512 MiB
+memory limit: 1024 MiB
 name: I
 partial score: false
 pre: []
 samples: []
-time limit: 1.0
+time limit: 7.0
 title:
-  zh-cn: 用于试题标题的中文名称
+  zh-cn: I. 狗蛋和二五仔
 type: program
 users: {}
 version: 2
