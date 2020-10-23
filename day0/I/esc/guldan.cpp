@@ -33,21 +33,18 @@ double f[P][S][V][O+2];
 bool vis[P][S][V][O+2];
 double g[3][P][S][V][O+1];
 bool vg[3][P][S][V][O+1];
-int a[5];
 struct init
 {
-    void dfs(int now,int tot)
+    void init0()
     {
-        if(now==3)
-        {
-            ++ptot;
-            hp[ptot][1]=a[1];
-            hp[ptot][2]=a[2];
-            sno[a[1]][a[2]]=ptot;
-            return;
-        }
-        for(int i=0;i+tot<=L;++i)
-            a[now]=i,dfs(now+1,tot+i);
+        for(int i=0;i<=L;++i)
+            for(int j=0;i+j<=L;++j)
+            {
+                ++ptot;
+                hp[ptot][1]=i;
+                hp[ptot][2]=j;
+                sno[i][j]=ptot;
+            }
     }
     void init1()
     {
@@ -87,7 +84,7 @@ struct init
     init()
     {
         T=io::F(),O=io::F();
-        dfs(1,0);
+        init0();
         init1();
         init2();
     }
