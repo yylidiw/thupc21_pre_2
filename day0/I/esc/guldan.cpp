@@ -18,6 +18,7 @@ int T,O;
 const int P=3604,HP=15;
 const int L=4,H=3;
 const int S=17,V=72;
+const int MO=5;
 int php[P][2]; //player hp
 int hnd[P][2]; //card in hand
 int pno[HP+2][HP+2][H+1][H+1];
@@ -29,10 +30,10 @@ int ful[S];
 int add1[V]; // add an attacked minion with hp=2
 int ptot,atot,htot;
 int opop[P];
-double f[P][S][V][O+2];
-bool vis[P][S][V][O+2];
-double g[3][P][S][V][O+1];
-bool vg[3][P][S][V][O+1];
+double f[P][S][V][MO+2];
+bool vis[P][S][V][MO+2];
+double g[3][P][S][V][MO+1];
+bool vg[3][P][S][V][MO+1];
 struct init
 {
     void init0()
@@ -178,17 +179,18 @@ int main()
 {
     while(T--)
     {
-        int E,S,c,p;
-        E=io::F(),S=io::F();
+        int E,S,c,a[3]={},p,e[3]={}; //itsme
+        E=io::F();
+        S=io::F();
         c=io::F();
-        int x[3]={};
-        for(int i=1;i<=c;++i)x[io::F()]++;
+        for(int i=1;i<=c;++i)
+            a[io::F()]++;
         p=io::F();
-        int y[3]={};
-        for(int i=1;i<=p;++i)y[io::F()]++;
+        for(int i=1;i<=p;++i)
+            e[io::F()]++;
         int oh=io::F(),sh=io::F();
         if(sh<H)++sh;
-        printf("%.9lf\n",dp(pno[S][E][oh][sh],sno[x[1]][x[2]],ful[sno[y[1]][y[2]]],O+1));
+        printf("%.9lf\n",dp(pno[S][E][oh][sh],sno[a[1]][a[2]],ful[sno[e[1]][e[2]]],O+1));
     }
     return 0;
 }
