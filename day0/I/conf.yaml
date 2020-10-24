@@ -11,13 +11,13 @@ data:
  - cases: [2]
  - cases: [3]
 folder: problem
-memory limit: 1024 MiB
+memory limit: 2048 MiB
 name: I
 partial score: false
 pre: []
 samples: 
  - cases: [1]
-time limit: 7.0
+time limit: 9.0
 title:
   zh-cn: I. 狗蛋和二五仔
 type: program

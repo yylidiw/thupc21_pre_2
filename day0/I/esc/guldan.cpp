@@ -15,7 +15,7 @@ namespace io
     }
 }
 int T,O;
-const int P=3604,HP=15;
+const int P=6404,HP=20;
 const int L=4,H=3;
 const int S=17,V=72;
 const int MO=5;
