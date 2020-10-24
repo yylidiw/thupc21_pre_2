@@ -10,7 +10,7 @@ namespace io
         char ch;
         while((ch=getchar())!='-'&&(ch<'0'||ch>'9'));
         ch=='-'?F=1:n=ch-'0';
-        while((ch=getchar())>='0'&&ch<'9')n=n*10+ch-'0';
+        while((ch=getchar())>='0'&&ch<='9')n=n*10+ch-'0';
         return F?-n:n;
     }
 }

@@ -7,14 +7,12 @@ compile:
   pas: -O2
   py: ''
 data: 
- - cases: [1]
- - cases: [2]
- - cases: [3]
+ - cases: [1,2,3,4,5,6]
+   score: 100
 folder: problem
 memory limit: 2048 MiB
 name: I
 partial score: false
-pre: []
 samples: 
  - cases: [1]
 time limit: 9.0
@@ -23,5 +21,5 @@ title:
 type: program
 users: 
   esc:
-    std: {expected: == 100, path: std/guldan.cpp}
+    std: {expected: == 100, path: esc/guldan.cpp}
 version: 2
