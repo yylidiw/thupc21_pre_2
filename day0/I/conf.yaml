@@ -19,7 +19,6 @@ time limit: 9.0
 title:
   zh-cn: I. 狗蛋和二五仔
 type: program
-users: 
 users:
   esc:
     std: {expected: == 100, path: esc/guldan.cpp}
