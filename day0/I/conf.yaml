@@ -15,7 +15,7 @@ name: I
 partial score: false
 samples: 
  - cases: [1]
-time limit: 9.0
+time limit: 10.0
 title:
   zh-cn: I. 狗蛋和二五仔
 type: program
