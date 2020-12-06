@@ -1,16 +1,17 @@
 import sys
 
 maxl = 998244353
+max_n = 12
 
 def check(num):
-    datas = open("../data/{}.in".format(num),"r")
+    datas = open("../data/{}.in".format(num), "r")
 
     n, k = datas.readline().split(" ")
     n, k = int(n), int(k)
 
     if k >= n:
         return False
-    if n > 12 or n < 2:
+    if n > max_n or n < max_n:
         return False
 
     g = set()
@@ -20,6 +21,7 @@ def check(num):
         data = datas.readline()
         if not data:
             break
+        
         x, y, p, q = data.split(" ")
         x, y, p, q = int(x), int(y), int(p), int(q)
 
