@@ -6,16 +6,20 @@ compile:
   java: ''
   pas: -O2
   py: ''
-data: []
+data: 
+ - cases: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+   score: 100
 folder: problem
 memory limit: 512 MiB
 name: G
 partial score: false
-pre: []
-samples: []
+samples:
+ - cases: [1]
 time limit: 1.0
 title:
-  zh-cn: 用于试题标题的中文名称
+  zh-cn: G. 密集子图
 type: program
-users: {}
+users:
+  solution:
+    std: {expected: == 100, path: solution/std.cpp}
 version: 2
