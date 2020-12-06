@@ -6,18 +6,20 @@ compile:
   java: ''
   pas: -O2
   py: ''
-data: []
+data: 
+ - cases: [1]
+   score: 100
 folder: problem
 memory limit: 512 MiB
 name: H
 partial score: false
-pre: []
-samples: []
+samples: 
+ - cases: [1]
 time limit: 1.0
 title:
-  zh-cn: 用于试题标题的中文名称
+  zh-cn: H. 线段树
 type: program
 users:
-  esc:
-    ac: {expected: == 100, path: esc/segtree.cpp}
+  solution:
+    ac: {expected: == 100, path: solution/std.cpp}
 version: 2
