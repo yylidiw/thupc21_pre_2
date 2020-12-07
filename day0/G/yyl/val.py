@@ -11,7 +11,7 @@ def check(num):
 
     if k >= n:
         return False
-    if n > max_n or n < max_n:
+    if n > max_n or n < 2:
         return False
 
     g = set()
