@@ -12,7 +12,7 @@ inline int read() {
 }
 
 const int N = 12;
-const int N_mask = (1 << N);
+const int N_mask = (1 << N) + 5;
 const int mod = 998244353;
 ll Pow(ll x,int t) {
     ll ret = 1;
@@ -70,7 +70,7 @@ int main() {
     for(int i = 1; i <= mask; i++) {
         for(int j = 0; j < n; j++) {
             int x = lower(i);
-            h[i][j] = (h[i^x][j] * (gh[x][j] + h[x][j]) + gh[i^x][j] * h[x][j]) % mod;
+            h[i][j] = (h[i^x][j] * (gh[x][1<<j] + h[x][j]) + gh[i^x][1<<j] * h[x][j]) % mod;
         }
     }
 

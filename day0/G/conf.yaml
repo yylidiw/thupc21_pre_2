@@ -22,4 +22,6 @@ type: program
 users:
   solution:
     ac: {expected: == 100, path: solution/std.cpp}
+  yyl:
+    yyl: {expected: == 100, path: yyl/yyl.cpp}
 version: 2
