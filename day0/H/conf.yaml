@@ -22,4 +22,6 @@ type: program
 users:
   solution:
     ac: {expected: == 100, path: solution/std.cpp}
+  esc:
+    ac: {expected: == 100, path: esc/segtree.cpp}
 version: 2
